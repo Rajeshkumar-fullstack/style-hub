@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleHub | Modern Fashion & Online Clothing Store</title>
+    <!-- Google Fonts for Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ensure fixed navbar stays visible on scroll across all browser caches -->
+    <style>
+        #main-header {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            z-index: 9999 !important;
+            background-color: rgba(255, 255, 255, 0.98) !important;
+            box-shadow: 0 2px 10px rgba(15, 23, 42, 0.08) !important;
+        }
+        #home.hero-section {
+            padding-top: 7.5rem !important;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header id="main-header">
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">
+                    <span class="logo-accent">Style</span>Hub
+                </a>
+
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge">New Season Collection 2026</span>
+                <h1 class="hero-title">Redefine Your Everyday Style</h1>
+                <p class="hero-description">
+                    Discover premium, sustainably crafted fashion designed to elevate your wardrobe. 
+                    Contemporary aesthetics, all-day comfort, and unmatched elegance.
+                </p>
+                <div class="hero-actions">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-outline">Explore Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Bar -->
+        <section class="features-bar">
+            <div class="features-container">
+                <div class="feature-item">
+                    <div class="feature-icon">&#10003;</div>
+                    <div class="feature-info">
+                        <h4>Premium Materials</h4>
+                        <p>100% organic cotton & breathable fabrics</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#9951;</div>
+                    <div class="feature-info">
+                        <h4>Fast & Free Shipping</h4>
+                        <p>Complimentary delivery on orders over $50</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#8635;</div>
+                    <div class="feature-info">
+                        <h4>30-Day Easy Returns</h4>
+                        <p>Hassle-free exchanges and instant refunds</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">&#128274;</div>
+                    <div class="feature-info">
+                        <h4>Secure Checkout</h4>
+                        <p>Protected with industry-standard encryption</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80" 
+                             alt="StyleHub Clothing Boutique Showcase" 
+                             class="about-img">
+                        <div class="about-stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Years of Crafting Timeless Fashion</span>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <span class="section-tag">About StyleHub</span>
+                        <h2 class="section-title">Fashion That Inspires Confidence & Individuality</h2>
+                        <p class="about-lead">
+                            At StyleHub, we believe that style is a personal statement. Founded with a vision 
+                            to unite modern elegance with accessible luxury, our curated collections bring together 
+                            contemporary silhouettes and meticulous craftsmanship.
+                        </p>
+                        <p class="about-body">
+                            Every garment in our catalog is thoughtfully designed and ethically tailored from 
+                            sustainable fabrics. Whether you are dressing for a morning boardroom meeting, a weekend 
+                            getaway, or an evening gala, StyleHub ensures you step out with effortless confidence.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-bullet">&#9679;</span>
+                                <span>Ethically sourced, eco-conscious textiles</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-bullet">&#9679;</span>
+                                <span>Tailored cuts engineered for comfort and movement</span>
+                            </div>
+                            <div class="highlight-item">
+                                <span class="highlight-bullet">&#9679;</span>
+                                <span>Over 50,000 delighted shoppers worldwide</span>
+                            </div>
+                        </div>
+                        <a href="#products" class="btn btn-secondary">Explore Our Collection</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Curated Picks</span>
+                    <h2 class="section-title">Trending Outfits & Best Sellers</h2>
+                    <p class="section-subtitle">
+                        Handpicked essentials tailored to fit your dynamic lifestyle. Explore our top-rated pieces for this season.
+                    </p>
+                </div>
+
+                <div class="product-grid" id="product-list">
+                    <!-- Product Card 1 -->
+                    <article class="product-card">
+                        <div class="product-badge">Best Seller</div>
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1576995853123-5a10305d93c0?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Classic Denim Jacket" 
+                                 class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Outerwear</span>
+                            <h3 class="product-title">Classic Denim Jacket</h3>
+                            <p class="product-desc">Vintage washed premium denim with reinforced stitching and dual chest pockets.</p>
+                            <div class="product-pricing-action">
+                                <div class="price-wrapper">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount">79.99</span>
+                                    <span class="price-old">$99.99</span>
+                                </div>
+                                <button type="button" class="btn btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card 2 -->
+                    <article class="product-card">
+                        <div class="product-badge badge-new">New</div>
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Casual Linen Button-Down Shirt" 
+                                 class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Shirts</span>
+                            <h3 class="product-title">Casual Linen Shirt</h3>
+                            <p class="product-desc">Lightweight, ultra-breathable pure linen fabric ideal for warm, sunny afternoons.</p>
+                            <div class="product-pricing-action">
+                                <div class="price-wrapper">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount">49.50</span>
+                                </div>
+                                <button type="button" class="btn btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card 3 -->
+                    <article class="product-card">
+                        <div class="product-badge badge-hot">Popular</div>
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Floral Summer Wrap Dress" 
+                                 class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Dresses</span>
+                            <h3 class="product-title">Floral Summer Wrap Dress</h3>
+                            <p class="product-desc">Graceful floral print with flattering adjustable wrap waist and flowing midi hemline.</p>
+                            <div class="product-pricing-action">
+                                <div class="price-wrapper">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount">64.00</span>
+                                    <span class="price-old">$85.00</span>
+                                </div>
+                                <button type="button" class="btn btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card 4 -->
+                    <article class="product-card">
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Urban Streetwear Fleece Hoodie" 
+                                 class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Streetwear</span>
+                            <h3 class="product-title">Urban Streetwear Hoodie</h3>
+                            <p class="product-desc">Heavyweight organic fleece cotton featuring a relaxed silhouette and kangaroo pouch.</p>
+                            <div class="product-pricing-action">
+                                <div class="price-wrapper">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount">58.00</span>
+                                </div>
+                                <button type="button" class="btn btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card 5 -->
+                    <article class="product-card">
+                        <div class="product-badge">Trending</div>
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Slim-Fit Stretch Chino Trousers" 
+                                 class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Bottoms</span>
+                            <h3 class="product-title">Slim-Fit Chino Pants</h3>
+                            <p class="product-desc">Versatile stretch cotton-twill chinos engineered for smart-casual comfort and style.</p>
+                            <div class="product-pricing-action">
+                                <div class="price-wrapper">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount">54.99</span>
+                                    <span class="price-old">$69.00</span>
+                                </div>
+                                <button type="button" class="btn btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product Card 6 -->
+                    <article class="product-card">
+                        <div class="product-badge badge-exclusive">Exclusive</div>
+                        <div class="product-img-box">
+                            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Tailored Wool-Blend Winter Overcoat" 
+                                 class="product-img">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">Coats</span>
+                            <h3 class="product-title">Minimalist Wool Overcoat</h3>
+                            <p class="product-desc">Refined notched lapels, smooth satin lining, and warm virgin wool blend construction.</p>
+                            <div class="product-pricing-action">
+                                <div class="price-wrapper">
+                                    <span class="price-currency">$</span>
+                                    <span class="price-amount">129.00</span>
+                                    <span class="price-old">$160.00</span>
+                                </div>
+                                <button type="button" class="btn btn-buy">Buy Now</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">
+                        Have questions about sizing, orders, or custom styling? Drop us a line and our friendly team will reply within 24 hours.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Info Panel -->
+                    <div class="contact-info-panel">
+                        <h3 class="panel-title">Let's Connect</h3>
+                        <p class="panel-desc">
+                            We'd love to hear from you. Visit our boutique, call customer support, or send us a direct message.
+                        </p>
+
+                        <div class="info-items">
+                            <div class="info-item">
+                                <div class="info-icon">&#128205;</div>
+                                <div class="info-text">
+                                    <strong>Store Location</strong>
+                                    <span>452 Fashion Boulevard, Suite 10, New York, NY 10018</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">&#128222;</div>
+                                <div class="info-text">
+                                    <strong>Phone Number</strong>
+                                    <span>+1 (800) 555-STYLE (7895)</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">&#9993;</div>
+                                <div class="info-text">
+                                    <strong>Email Address</strong>
+                                    <span>support@stylehubfashion.com</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">&#9200;</div>
+                                <div class="info-text">
+                                    <strong>Operating Hours</strong>
+                                    <span>Mon - Sat: 9:00 AM - 8:00 PM EST</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contact-form" action="#" method="POST" onsubmit="return false;">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Jane Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. jane@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Message <span class="required">*</span></label>
+                                <textarea id="contact-message" name="message" class="form-textarea" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer" class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column brand-col">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-accent">Style</span>Hub
+                    </a>
+                    <p class="footer-tagline">
+                        Elevating everyday style with responsibly crafted fashion essentials and modern apparel since 2016.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter / X" target="_blank" rel="noopener">X</a>
+                        <a href="https://pinterest.com" class="social-link" aria-label="Pinterest" target="_blank" rel="noopener">PIN</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Product Catalog</a></li>
+                        <li><a href="#contact">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Customer Care</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#products">Shipping & Returns</a></li>
+                        <li><a href="#products">Size & Fit Guide</a></li>
+                        <li><a href="#contact">Order Tracking</a></li>
+                        <li><a href="#contact">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column newsletter-col">
+                    <h4 class="footer-heading">Stay in Style</h4>
+                    <p class="newsletter-desc">Subscribe to receive private sale invitations and 10% off your first order.</p>
+                    <form class="newsletter-form" action="#" method="POST" onsubmit="return false;">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-subscribe">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 StyleHub Clothing Co. All rights reserved.</p>
+                <p class="footer-credits">Crafted with HTML5 &amp; CSS3 for the Commercial Web Project Assignment.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
